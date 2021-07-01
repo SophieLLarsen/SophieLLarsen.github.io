@@ -1,176 +1,91 @@
 @import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arsenal&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Monoton|Montserrat|Righteous|Bowlby+One+SC&display=swap');
-@import url('https://fonts.googleapis.com/css?family=Major+Mono+Display|Nova+Mono&display=swap');
 
+/* general */
 * {
   box-sizing: border-box;
 }
 
 html,body {
-    width: 100%;
-    height: 100%;
-    margin: 0;
-    font-family: 'Arsenal', sans-serif;
-}
-
-h1,h2,h3,h4,h5,h6 {
-    font-family: 'Abril Fatface', cursive;
-    color: #455752;
-}
-
-strong {
-    color: #455752;
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Arsenal', sans-serif;
 }
 
 body {
-    background-color: #f0f0f0;
+  background-color: #f0f0f0;
 }
 
 main {
-    background-color: #f0f0f0;
-    padding: 0 2.5rem 2.5rem 2.5rem;
+  background-color: #f0f0f0;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
 }
 
-header {
-    background-color: #dde7e5;
-    margin: 0;
-    display: grid;
-    grid-template-columns:  50% 50%;
-    color: #455752;
-}
-
-.navbar {
-    padding: 0;
-    display: flex;
-    justify-content: space-around;
-    align-items: center;
-    height: 14rem;
-}
-
-.navbar-brand h1, .navbar-brand h2 {
-    display: inline;
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abril Fatface', cursive;
+  color: #455752;
 }
 
 h1 {
-    font-size: 4rem;
-    margin:0;
-    color: #34413E;
+  font-size: 4rem;
+  margin:0;
+  color: #34413E;
 }
 
-h2, .navbar-brand h2 {
-    font-size: 2.5rem;
-    margin-top: 0px;
-
-    color: #455752;
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0px;
+  color: #455752;
 }
 
-.nav-link {
-    font-size: 1.25rem;
-    color: #455752;
+h3 {
+  font-family: 'Arsenal', sans-serif;
+  font-weight: bold;
+}
+
+strong {
+  color: #455752;
+}
+
+a, .nav-link {
+  text-decoration: none;
+}
+
+a:hover, a:active, a.active {
+  text-decoration: underline;
+  color: #455752;
+}
+
+/* navbar */
+
+.bg-primary, .navbar-light {
+  background-color: #dde7e5 !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  padding: 0;    
+  height: 14rem;
 }
 
 .navbar-brand {
-    display: inline-flex;
-    flex-direction: column;
-    padding-left: 3rem;
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.navbar-brand h1, .navbar-brand h2 {
+  display: inline;
 }
 
 .navbrand-link:hover {
   text-decoration: none;
 }
 
-header img {
-    width: 100%;
-}
-
-#profile-pic {
-    background-image: url("../images/sophie.png");
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    border: 10px solid #455752;
-    border-radius: 2rem;
-}
-
-header a {
-    margin-left: 15px;
-    margin-right: 15px;
-}
-
-.main {
-    display: grid;
-    grid-template-columns: 30% 65%;
-    grid-gap: 5%;
-    padding: 2.5rem;
-}
-
-.split {
-  display: grid;
-  grid-template-columns: 47.5% 47.5%;
-  grid-gap: 5%;
-}
-
-.full-width {
-  width: 80%;
-  margin-left: auto;
-  margin-right: auto;
-  padding-top: 2rem;
-}
-
-#image {
-    background-image: url('../images/Group.png');
-    background-size: contain;
-    background-position: center;
-    background-repeat: no-repeat;
-    height: inherit;
-}
-
-#about {
-    display: grid;
-    grid-template-columns: 40% 45%;
-    grid-column-gap: 10%;
-}
-
-/* article {
-    padding-left: 10%;
-    padding-right: 1%;
-} */
-
-h3 {
-  font-family: 'Arsenal', sans-serif;
-  font-weight: bold;
-  /* color: #34413E; */
-}
-
-#axioms {
-    grid-column-start: 1;
-    grid-column-end: 3;
-}
-
-a, .nav-link {
-    text-decoration: none;
-}
-
-.nav-link {
-  width: 100%;
+.navbar-collapse {
   height: 100%;
-  padding: 0;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
-
-.nav-item {
-  height: 100%;
-  display: flex;
-  padding: 0.5rem;
-  align-items: center;
-  min-width: 6.5rem;
-  justify-content: center;
-}
-
-.nav-item:hover, .nav-item.active {
-  background-image: linear-gradient(0deg, #f0f0f0 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%);
 }
 
 .navbar-nav {
@@ -178,22 +93,36 @@ a, .nav-link {
   height: 100%;
 }
 
-.navbar-collapse {
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 100%;
+  min-width: 6.5rem;
+  padding: 0.5rem;
 }
 
-a:hover, a:active /*, .nav-link:hover, .nav-link:active */ {
-  text-decoration: underline;
+.nav-item:hover, .nav-item.active {
+  background-image: linear-gradient(0deg, #f0f0f0 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%);
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 1.25rem;
   color: #455752;
 }
 
 .nav-link:visited {
-    color: inherit;
+  color: inherit;
 }
 
-.bg-primary, .navbar-light {
-  background-color: #dde7e5 !important;
-}
+
+/* footer */
 
 footer {
   padding: 1rem 3rem;
@@ -203,41 +132,67 @@ footer > p {
   margin: 0;
 }
 
-/* @media only screen and (max-width: 1000px) {
-    #profile-pic {
-        display: none;
-    }
+/* about page */
 
-    main #image {
-        background-size: cover;
-        background-position: center;
-        background-repeat: no-repeat;
-        height: 100%;
-        margin-left: 5%;
-        border: 10px solid #ACD8CC;
-    }
-    #about div {
-        grid-column: 1 / 3;
-    }
-} */
+.main {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  grid-gap: 5%;
+  padding: 2.5rem;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 40% 45%;
+  grid-column-gap: 10%;
+}
+
+#profile-pic {
+  background-image: url("../images/sophie.png");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 10px solid #455752;
+  border-radius: 2rem;
+}
+
+#image {
+  background-image: url('../images/Group.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: inherit;
+}
+
+#axioms {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* resources page */
+
+.split {
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  grid-gap: 5%;
+}
+
+/* small screens */
 
 @media only screen and (max-width: 992px) {
-  main, .main, .split, .full-width {
+  main {
+    padding-top: 0;
+  }
+
+  main, .main, .split {
     display: block;
     padding-left: 5rem;
     padding-right: 5rem;
   }
 
-  .full-width {
-    width: 100%;
-  }
-
-  #profile-pic {
-    display: none;
-  }
-
-  #about {
+  article {
     padding: 0;
+    margin-top: 2rem;
   }
 
   .navbar {
@@ -259,6 +214,14 @@ footer > p {
     color: #455752;
   }
 
+  #profile-pic {
+    display: none;
+  }
+
+  #about {
+    padding: 0;
+  }
+
   #image {
     background-image: url("../images/sophie.png");
     background-size: cover;
@@ -267,59 +230,52 @@ footer > p {
     border: 10px solid #455752;
     border-radius: 2rem;
   }
-
-  article {
-    padding: 0;
-    margin-top: 2rem;
-  }
 }
 
+/* smaller screens */
+
 @media only screen and (max-width: 576px) {
+  main, .main, .split {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  
   h1 {
     font-size: 2.5rem;
   }
   .navbar-brand h2, .navbar-brand h3 {
     font-size: 2rem;
   }
-
-  main, .main, .split, .full-width {
-    padding-left: 2.5rem;
-    padding-right: 2.5rem;
-  }
 }
+
+/* phone screen */
 
 @media only screen and (orientation: portrait) {
   main, .main, .split {
-        padding-top: 0;
-        grid-template-rows: 47.5% 47.5%;
-        grid-gap: 5%;
+    padding-top: 0;
+    grid-template-rows: 47.5% 47.5%;
+    grid-gap: 5%;
   }
 
-    #image {
-        display: none;
-    }
+  p, li {
+    font-size: 1.25rem;
+  }
 
-    .bio {
-      grid-row: 2 / 3;
-      grid-column: 1 /3;
-      margin-bottom: 2rem;
-    }
-    /* #about {
-        grid-row: 2 / 3;
-        grid-column: 1 /3;
-        padding: 10%;
-        padding-top: 0;
-    } */
+  a {
+    text-decoration: underline;
+  }
 
-    p, li {
-        font-size: 1.25rem;
-    }
+  nav a {
+    text-decoration: none;
+  }
 
-    a {
-        text-decoration: underline;
-    }
+  #image {
+    display: none;
+  }
 
-    nav a {
-      text-decoration: none;
-    }
+  .bio {
+    grid-row: 2 / 3;
+    grid-column: 1 /3;
+    margin-bottom: 2rem;
+  }
 }

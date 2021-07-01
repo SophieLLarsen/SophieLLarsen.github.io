@@ -28,6 +28,7 @@ body {
 
 main {
     background-color: #f0f0f0;
+    padding: 0 2.5rem 2.5rem 2.5rem;
 }
 
 header {
@@ -39,10 +40,11 @@ header {
 }
 
 .navbar {
-    padding: 15px 0 10px 0;
+    padding: 0;
     display: flex;
     justify-content: space-around;
     align-items: center;
+    height: 14rem;
 }
 
 .navbar-brand h1, .navbar-brand h2 {
@@ -86,8 +88,8 @@ header img {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 10px solid #ACD8CC;
-    margin-left: 3rem;
+    border: 10px solid #455752;
+    border-radius: 2rem;
 }
 
 header a {
@@ -95,14 +97,11 @@ header a {
     margin-right: 15px;
 }
 
-main {
-  padding-top: 3%;
-}
-
 .main {
     display: grid;
     grid-template-columns: 30% 65%;
     grid-gap: 5%;
+    padding: 2.5rem;
 }
 
 .split {
@@ -123,27 +122,24 @@ main {
     background-size: contain;
     background-position: center;
     background-repeat: no-repeat;
-    height: 100%;
-    min-height: 25rem;
+    height: inherit;
 }
 
 #about {
-    padding-left: 1%;
-    padding-right: 10%;
     display: grid;
-    grid-template-columns: 50% 45%;
-    grid-column-gap: 5%;
+    grid-template-columns: 40% 45%;
+    grid-column-gap: 10%;
 }
 
-article {
+/* article {
     padding-left: 10%;
     padding-right: 1%;
-}
+} */
 
 h3 {
   font-family: 'Arsenal', sans-serif;
   font-weight: bold;
-  color: #34413E;
+  /* color: #34413E; */
 }
 
 #axioms {
@@ -156,16 +152,39 @@ a, .nav-link {
 }
 
 .nav-link {
-  margin-left: 1rem;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.nav-item {
+  height: 100%;
+  display: flex;
+  padding: 0.5rem;
+  align-items: center;
+  min-width: 6.5rem;
+  justify-content: center;
+}
+
+.nav-item:hover, .nav-item.active {
+  background-image: linear-gradient(0deg, #f0f0f0 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%);
 }
 
 .navbar-nav {
   margin-right: 3rem;
+  height: 100%;
 }
 
-a:hover, a:active, .nav-link:hover, .nav-link:active {
-    text-decoration: underline;
-    color: #455752;
+.navbar-collapse {
+  height: 100%;
+}
+
+a:hover, a:active /*, .nav-link:hover, .nav-link:active */ {
+  text-decoration: underline;
+  color: #455752;
 }
 
 .nav-link:visited {
@@ -176,6 +195,13 @@ a:hover, a:active, .nav-link:hover, .nav-link:active {
   background-color: #dde7e5 !important;
 }
 
+footer {
+  padding: 1rem 3rem;
+}
+
+footer > p {
+  margin: 0;
+}
 
 /* @media only screen and (max-width: 1000px) {
     #profile-pic {
@@ -214,8 +240,23 @@ a:hover, a:active, .nav-link:hover, .nav-link:active {
     padding: 0;
   }
 
+  .navbar {
+    height: fit-content;
+    padding: 1rem 0;
+  }
+
   .navbar-brand {
     padding: 0;
+  }
+
+  .navbar-nav {
+    margin-right: auto;
+  }
+
+  .nav-item:hover, .nav-item.active {
+    background: none;
+    text-decoration: underline;
+    color: #455752;
   }
 
   #image {
@@ -223,7 +264,8 @@ a:hover, a:active, .nav-link:hover, .nav-link:active {
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
-    border: 10px solid #ACD8CC;
+    border: 10px solid #455752;
+    border-radius: 2rem;
   }
 
   article {

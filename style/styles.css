@@ -148,7 +148,7 @@ footer > p {
 }
 
 #profile-pic {
-  background-image: url("../images/sophie.png");
+  background-image: url("../images/sophie.jpg");
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
@@ -223,7 +223,7 @@ footer > p {
   }
 
   #image {
-    background-image: url("../images/sophie.png");
+    background-image: url("../images/sophie.jpg");
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;

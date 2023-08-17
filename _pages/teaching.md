@@ -13,7 +13,7 @@ nav_order: 2
   <div class="p-3">
     <div class="row">
       <div class="col-sm-10">
-        <h5 class="font-weight-bold">Calculus 1</h5>
+        <h5 class="font-weight-bold">Calculus 2</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
         <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle">
@@ -21,13 +21,35 @@ nav_order: 2
         </span>
       </div>
     </div>
+    <h6 class="font-italic mt-2 mt-sm-0">Fall 2022: Teaching Assistant</h6>
+    <ul>
+    <li>Led one Merit sections</li>
+    <li>Wrote worksheets/mock exams and facilitated complex problem solving and collaboration</li>
+    </ul>
     <h6 class="font-italic mt-2 mt-sm-0">Spring 2022: Teaching Assistant</h6>
     <ul>
-    <li>Led 2 discussion sections, held office hours, graded worksheets, and developed exams</li>
+    <li>Led 2 discussion sections</li>
+    <li>Held office hours, graded worksheets, and developed exams</li>
     </ul>
+  </div>
+</div>
+
+<div class="card mt-3">
+  <div class="p-3">
+    <div class="row">
+      <div class="col-sm-10">
+        <h5 class="font-weight-bold">Calculus 1</h5>
+      </div>
+      <div class="col-sm-2 text-left text-sm-right">
+        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle">
+            MATH 221
+        </span>
+      </div>
+    </div>
     <h6 class="font-italic mt-2 mt-sm-0">Fall 2021: Teaching Assistant</h6>
     <ul>
-    <li>Led 2 discussion sections, held office hours, and graded worksheets and exams</li>
+    <li>Led 2 discussion sections</li>
+    <li>Held office hours, and graded worksheets and exams</li>
     </ul>
   </div>
 </div>

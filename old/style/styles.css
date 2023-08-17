@@ -1,0 +1,281 @@
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arsenal&display=swap');
+
+/* general */
+* {
+  box-sizing: border-box;
+}
+
+html,body {
+  width: 100%;
+  height: 100%;
+  margin: 0;
+  font-family: 'Arsenal', sans-serif;
+}
+
+body {
+  background-color: #f0f0f0;
+}
+
+main {
+  background-color: #f0f0f0;
+  padding: 2.5rem 2.5rem 2.5rem 2.5rem;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Abril Fatface', cursive;
+  color: #455752;
+}
+
+h1 {
+  font-size: 4rem;
+  margin:0;
+  color: #34413E;
+}
+
+h2 {
+  font-size: 2.5rem;
+  margin-top: 0px;
+  color: #455752;
+}
+
+h3 {
+  font-family: 'Arsenal', sans-serif;
+  font-weight: bold;
+}
+
+strong {
+  color: #455752;
+}
+
+a, .nav-link {
+  text-decoration: none;
+}
+
+a:hover, a:active, a.active {
+  text-decoration: underline;
+  color: #455752;
+}
+
+/* navbar */
+
+.bg-primary, .navbar-light {
+  background-color: #dde7e5 !important;
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;  
+  padding: 0;    
+  height: 14rem;
+}
+
+.navbar-brand {
+  display: inline-flex;
+  flex-direction: column;
+  padding-left: 3rem;
+}
+
+.navbar-brand h1, .navbar-brand h2 {
+  display: inline;
+}
+
+.navbrand-link:hover {
+  text-decoration: none;
+}
+
+.navbar-collapse {
+  height: 100%;
+}
+
+.navbar-nav {
+  margin-right: 3rem;
+  height: 100%;
+}
+
+.nav-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  min-width: 6.5rem;
+  padding: 0.5rem;
+}
+
+.nav-item:hover, .nav-item.active {
+  background-image: linear-gradient(0deg, #f0f0f0 0%, rgba(235, 237, 245, 0.8) 80%, rgba(235, 237, 245, 0) 100%);
+}
+
+.nav-link {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  font-size: 1.25rem;
+  color: #455752;
+}
+
+.nav-link:visited {
+  color: inherit;
+}
+
+
+/* footer */
+
+footer {
+  padding: 1rem 3rem;
+}
+
+footer > p {
+  margin: 0;
+}
+
+/* about page */
+
+.main {
+  display: grid;
+  grid-template-columns: 30% 65%;
+  grid-gap: 5%;
+  padding: 2.5rem;
+}
+
+#about {
+  display: grid;
+  grid-template-columns: 40% 45%;
+  grid-column-gap: 10%;
+}
+
+#profile-pic {
+  background-image: url("../images/sophie.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  border: 10px solid #455752;
+  border-radius: 2rem;
+}
+
+#image {
+  background-image: url('../images/Group.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  height: inherit;
+}
+
+#axioms {
+  grid-column-start: 1;
+  grid-column-end: 3;
+}
+
+/* resources page */
+
+.split {
+  display: grid;
+  grid-template-columns: 47.5% 47.5%;
+  grid-gap: 5%;
+}
+
+/* small screens */
+
+@media only screen and (max-width: 992px) {
+  main {
+    padding-top: 0;
+  }
+
+  main, .main, .split {
+    display: block;
+    padding-left: 5rem;
+    padding-right: 5rem;
+  }
+
+  article {
+    padding: 0;
+    margin-top: 2rem;
+  }
+
+  .navbar {
+    height: fit-content;
+    padding: 1rem 0;
+  }
+
+  .navbar-brand {
+    padding: 0;
+  }
+
+  .navbar-nav {
+    margin-right: auto;
+  }
+
+  .nav-item:hover, .nav-item.active {
+    background: none;
+    text-decoration: underline;
+    color: #455752;
+  }
+
+  #profile-pic {
+    display: none;
+  }
+
+  #about {
+    padding: 0;
+  }
+
+  #image {
+    background-image: url("../images/sophie.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    border: 10px solid #455752;
+    border-radius: 2rem;
+  }
+}
+
+/* smaller screens */
+
+@media only screen and (max-width: 576px) {
+  main, .main, .split {
+    padding-left: 2.5rem;
+    padding-right: 2.5rem;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+  }
+  .navbar-brand h2, .navbar-brand h3 {
+    font-size: 2rem;
+  }
+}
+
+/* phone screen */
+
+@media only screen and (orientation: portrait) {
+  main, .main, .split {
+    padding-top: 0;
+    grid-template-rows: 47.5% 47.5%;
+    grid-gap: 5%;
+  }
+
+  p, li {
+    font-size: 1.25rem;
+  }
+
+  a {
+    text-decoration: underline;
+  }
+
+  nav a {
+    text-decoration: none;
+  }
+
+  #image {
+    display: none;
+  }
+
+  .bio {
+    grid-row: 2 / 3;
+    grid-column: 1 /3;
+    margin-bottom: 2rem;
+  }
+}

@@ -4,6 +4,9 @@
 
 // Typography
 
+@import url('https://fonts.googleapis.com/css?family=Abril+Fatface|Arsenal&display=swap');
+
+
 p,
 h1,
 h2,
@@ -17,6 +20,14 @@ li,
 span,
 strong {
   color: var(--global-text-color);
+}
+
+h1 {
+  color: var(--global-theme-color);
+}
+
+h1, .navbar-brand.title {
+  font-family: 'Abril Fatface', cursive;
 }
 
 hr {
@@ -169,7 +180,7 @@ blockquote {
 .navbar {
   box-shadow: none;
   border-bottom: 1px solid var(--global-divider-color);
-  background-color: var(--global-bg-color);
+  background-color: var(--accent-bg-color);
   opacity: 0.95;
 }
 
@@ -329,7 +340,7 @@ blockquote {
 
 // Footer
 footer.fixed-bottom {
-  background-color: var(--global-footer-bg-color);
+  background-color: var(--accent-bg-color);
   font-size: 0.75rem;
 
   .container {
@@ -353,6 +364,7 @@ footer.sticky-bottom {
   padding-top: 40px;
   padding-bottom: 40px;
   font-size: 0.9rem;
+  background-color: var(--accent-bg-color);
 }
 
 // CV

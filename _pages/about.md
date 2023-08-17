@@ -5,8 +5,8 @@ permalink: /
 subtitle: <a href='http://www.sophielarsen.me/#'>they / them</a><br><a href="mailto:sll4@illinois.edu">sll4 (at) illinois.edu</a>
 
 profile:
-  align: left
-  image: prof_pic.jpg
+  align: right
+  image: profile.jpg
   image_circular: false # crops the image to make it circular
   # address: >
   #   <p>555 your office number</p>

@@ -25,7 +25,7 @@ Before joining PEEC, I earned a Master of Science in Mathematics from the Univer
 
 Outside of academia, my interests include music, swimming, and travel. I speak Norwegian fluently and am always looking for reasons to visit! 
 
-**I strive to follow the [axioms](http://math.sfsu.edu/federico/Articles/noticesfinal.pdf) proposed by Federico Ardila.**
+*I strive to follow the [axioms](http://math.sfsu.edu/federico/Articles/noticesfinal.pdf) proposed by Federico Ardila.*
 
 1. Mathematical talent is distributed equally among different groups, irrespective of geographic, demographic, and economic boundaries.
 2. Everyone can have joyful, meaningful, and empowering mathematical experiences.

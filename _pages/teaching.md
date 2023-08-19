@@ -16,7 +16,7 @@ nav_order: 2
         <h5 class="font-weight-bold">Calculus 2</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle">
+        <span class="badge font-weight-bold eggplant darken-1 text-uppercase align-middle">
             MATH 231
         </span>
       </div>
@@ -41,7 +41,7 @@ nav_order: 2
         <h5 class="font-weight-bold">Calculus 1</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle">
+        <span class="badge font-weight-bold eggplant darken-1 text-uppercase align-middle">
             MATH 221
         </span>
       </div>
@@ -61,7 +61,7 @@ nav_order: 2
         <h5 class="font-weight-bold">Calculus for Business</h5>
       </div>
       <div class="col-sm-2 text-left text-sm-right">
-        <span class="badge font-weight-bold light-green darken-1 text-uppercase align-middle">
+        <span class="badge font-weight-bold eggplant darken-1 text-uppercase align-middle">
             MATH 234
         </span>
       </div>

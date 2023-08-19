@@ -2,7 +2,7 @@
 layout: about
 title: about
 permalink: /
-subtitle: <a href='http://www.sophielarsen.me/#'>they / them</a><br><a href="mailto:sll4@illinois.edu">sll4 (at) illinois.edu</a>
+subtitle: <a href='http://www.sophielarsen.me/#'>they / them</a><br><a href="mailto:sll4@illinois.edu">sll4 (at) illinois (dot) edu</a>
 
 profile:
   align: right

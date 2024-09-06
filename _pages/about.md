@@ -19,7 +19,7 @@ selected_papers: false # includes a list of papers marked as "selected={true}"
 social: true  # includes social icons at the bottom of the page
 ---
 
-I am a Ph.D. student in the [Program in Ecology, Evolution, and Conservation Biology](https://peec.illinois.edu/) at the University of Illinois, Urbana-Champaign. My advisor is [Pamela Martinez](https://mcb.illinois.edu/faculty/profile/pamelapm/). I am interested in the relationships between social inequity, marginalization, and disease transmission, with a particular focus on COVID-19 dynamics using nonlinear ODE systems.
+I am a Ph.D. student in the [Program in Ecology, Evolution, and Conservation Biology](https://peec.illinois.edu/) at the University of Illinois at Urbana-Champaign. My advisor is [Pamela Martinez](https://mcb.illinois.edu/faculty/profile/pamelapm/). I am interested in the relationships between social inequity, marginalization, and disease transmission, with a particular focus on COVID-19 dynamics using nonlinear ODE systems.
 
 Before joining PEEC, I earned a Master of Science in Mathematics from the University of Illinois, Urbana-Champaign in 2022. I completed my undergraduate studies in mathematics at the University of Washington, with minors in Norwegian and the Comparative History of Ideas. I also have significant coursework relating to public health.
 

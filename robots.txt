@@ -1,4 +1,4 @@
 User-agent: *
 Disallow:
 
-Sitemap: https://BarnabyLLama.github.io/sitemap.xml
+Sitemap: https://SophieLLarsen.github.io/sitemap.xml
